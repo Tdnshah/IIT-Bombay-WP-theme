@@ -1,0 +1,209 @@
+/*
+Theme Name: IIT Bombay Theme    
+Theme URI: iitb.ac.in
+Author: Tejas Shah
+Author URI: 
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iitbombat theme
+Tags:  is licensed under the GPL.
+*/
+
+/***************************global settings **************************/
+.container{
+    max-width: 70%;
+    padding:0px;
+}
+
+.container-fluid{
+    padding:0px;
+
+}
+
+.row{
+    margin: 0px;
+}
+
+#section-content{
+    margin-top: 1rem;
+}
+
+#no-padding{
+    padding-top: 5px;
+}
+#logo-section{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+.logo {
+    line-height: 1; 
+    position: relative;
+    }
+.logo img{
+    height: 80px;
+    width:78px; 
+}
+.logo-text{
+    max-height: 80px;
+    max-width: 150px;
+    padding-top:2.5%;
+    margin-left: 0.8rem;
+    position: relative;
+}
+.logo h3{
+    color: #006699;
+    text-align: center
+}
+#primary-logo{
+    position: relative;
+}
+#secondary-logo{
+    position: absolute;
+    right: 0px;
+    height: 85px;
+    width: 160px;
+    
+    
+}
+/****************************main navbar *******************************/
+.navbar-nav > li:hover > .dropdown-menu {
+    display: block;
+    top: 40px;
+    }
+.navbar-nav li > .dropdown-menu li:hover .dropdown-menu {
+    left: 190px;
+    top: 0;
+    width: 200px !important;
+    display: block;
+    }
+.navbar{
+    padding:0px;
+}
+.nav-link{
+    height: 100%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+}
+   
+
+.nav-link:hover{
+    background: gray;
+}
+
+li.active {
+    background-color: #006699;
+}
+
+#top-navbar{    
+    background-color: #333; 
+
+      
+}
+#top-navbar .nav-link{
+    color: #999; 
+    padding: 0.219rem; ;
+}
+/***********************************slider**************************************/
+#slider-section{
+    min-height: 300px;
+    background:url(./assets/images/square_bg.png) repeat scroll 0 0 #f1f1f1;
+}
+/***********************************content**************************************/
+#news-section{
+    padding-bottom: 1rem;
+}
+#news-thumbnail{
+    padding: 0;
+}
+
+#news-excrept h6{
+    color: #006699;
+}
+
+#news-excrept p{
+    font-size: 14px;
+}
+
+#news-excrept{
+    text-align: justify;
+}
+/*********************** Widgets section **************************/
+.headingdeco{
+    background-color:#006699 ;
+    padding:5px;
+    text-align: center;
+    color: white;    
+}
+
+.headingdeco a{
+    color: white;
+}
+
+/**************************footer section ***********************/
+
+#footer-section{
+    background:url(./assets/images/texture_bg.png) repeat scroll 0 0 #444444;
+    color:white;
+    padding-top:20px;
+}
+
+#footer1 a{
+    color:white;
+}
+#footer1 ul{
+    list-style-type: none
+}
+
+#footer2 a{
+    color:white;
+}
+
+#footer2 ul{
+    list-style-type: none
+}
+#footer3 a{
+    color:white;
+}
+
+#footer3 ul{
+    list-style-type: none
+}
+#footer4 a{
+    color:white;
+}
+#footer4 ul{
+    list-style-type: none
+}
+
+#section-blogroll{
+    padding: 0 0 5rem 0;
+    
+}
+#section-blogroll .content{
+    padding: 10px;
+    background-color: #efefef;  
+}
+
+#section-blogroll .blockquote{
+    border-left: 2px solid #006699;
+    padding: 0 0 0 1rem;
+    
+}
+#section-blogroll .col-sm-3{
+    padding: 0;
+}
+
+
+
+/* single content template in single.php file */
+
+.content{
+    min-height: 20rem;
+}
+#single-thumbnail{
+    padding-top:2rem;
+}

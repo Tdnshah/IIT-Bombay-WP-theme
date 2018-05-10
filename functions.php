@@ -1,0 +1,164 @@
+<?php
+// require_once( get_template_directory() . '/inc/customizer/customizer.php' );
+require_once(get_template_directory() . '/inc/wp-bootstrap-navwalker.php');
+require_once(get_template_directory() . '/inc/blogroll-widget.php');
+require_once(get_template_directory() . '/inc/Herosection_Widget.php');
+
+/* scripts and stylesheets loader*/
+function iitb_theme_resource_loading(){
+    wp_enqueue_script('jquery331',get_template_directory_uri() .'/assets/jquery/jquery-3.3.1.min.js');
+    wp_enqueue_style('bootstrapcss',get_template_directory_uri() .'/assets/bootstrap/css/bootstrap.min.css');
+    wp_enqueue_script('bootstrapjs',get_template_directory_uri() .'/assets/bootstrap/js/bootstrap.min.js');
+    wp_enqueue_style('style',get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'iitb_theme_resource_loading');
+/************ adding featured image support *******/
+
+add_theme_support('post-thumbnails');
+
+/* Customiser Institute Settings functions */
+function iitb_theme_institute_settings($wp_customize){
+    $wp_customize->add_section( 'iitb_theme_institute_section' , array(
+        'title'       => __( 'Institute Settings', 'iitb_theme' ),
+        'priority'    => 30,
+        'description' => 'Institute Details Settings',
+    ) );
+    $wp_customize->add_setting( 'iitb_theme_institute_setting', array(
+        'capability' => 'edit_theme_options',
+        'default' => 'Enter Your Institutes Name Here',
+        'sanitize_callback' => 'sanitize_text_field',
+      ) );
+    $wp_customize->add_control('iitb_theme_institute_setting', array(
+        'label'   => 'Institute Name',
+        'section' => 'iitb_theme_institute_section',
+        'type'    => 'text',
+   ) ) ;
+};
+add_action( 'customize_register', 'iitb_theme_institute_settings' );
+
+/* Customiser Logo Uploader functions */
+function iitb_theme_primary_logo_uploader($wp_customize){
+    $wp_customize->add_section( 'iitb_theme_logo_section' , array(
+        'title'       => __( 'Logo', 'iitb_theme' ),
+        'priority'    => 30,
+        'description' => 'Upload a logo to replace the default site name and description in the header',
+    ) );
+    $wp_customize->add_setting( 'iitb_theme_primary_logo' );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'iitb_theme_logo', array(
+        'label'    => __( 'Primary Logo', 'iitb_theme' ),
+        'section'  => 'iitb_theme_logo_section',
+        'settings' => 'iitb_theme_primary_logo',
+   ) ) );
+};
+add_action( 'customize_register', 'iitb_theme_primary_logo_uploader' );
+
+
+
+function iitb_theme_secondary_logo_uploader($wp_customize){
+    
+    $wp_customize->add_setting( 'iitb_theme_secondary_logo' );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'iitb_theme_secondary_logo', array(
+        'label'    => __( 'Seondary Logo', 'iitb_theme' ),
+        'section'  => 'iitb_theme_logo_section',
+        'settings' => 'iitb_theme_secondary_logo',
+   ) ) );
+};
+add_action( 'customize_register', 'iitb_theme_secondary_logo_uploader' );
+
+/********************************** Registreing Wordpress Primary & secondary Menu ***************************/
+
+add_action( 'after_setup_theme', 'wpt_setup' );
+    if ( ! function_exists( 'wpt_setup' ) ):
+        function wpt_setup() {  
+            register_nav_menu( 'primary', __( 'Primary navigation', 'iitb_theme' ) );
+            register_nav_menu( 'topnav', __('Top Navigation','iitb_theme' ));
+        } endif;
+
+
+/********************************** Registreing Widget sections for front-page ***************************/
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Events',
+    'id'            => 'events',
+    'before_widget' => '<div class = "events-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+register_sidebar(array(
+    'name' => 'Announcement',
+    'id'            => 'announcements',
+    'before_widget' => '<div class = "announcements-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+
+register_sidebar(array(
+    'name' => 'Footer 1',
+    'id'            => 'footer1',
+    'before_widget' => '<div class = "footer1-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+
+register_sidebar(array(
+    'name' => 'Footer 2',
+    'id'            => 'footer2',
+    'before_widget' => '<div class = "footer2-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+
+register_sidebar(array(
+    'name' => 'Footer 3',
+    'id'            => 'footer3',
+    'before_widget' => '<div class = "footer3-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+
+register_sidebar(array(
+    'name' => 'Footer 4',
+    'id'            => 'footer4',
+    'before_widget' => '<div class = "footer4-Widgets">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+register_sidebar(array(
+    'name' => 'SideBar',
+    'id'            => 'sidebar',
+    'before_widget' => '<div class = "sidebar">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="headingdeco"><h5>',
+    'after_title' => '</h5></div>',
+  )
+);
+
+register_sidebar(array(
+    'name' => 'Hero Section',
+    'id'            => 'herosection',
+    'before_widget' => '<div class = "herosection">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="herosectionh1"><h3>',
+    'after_title' => '</h3></div>',
+  )
+);
+
+
+
+?>
+
+
