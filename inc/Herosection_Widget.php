@@ -145,7 +145,7 @@ class Herosection_Widget extends WP_Widget {
 					$instance[$widget_field['id']] = $_POST[$this->get_field_id( $widget_field['id'] )];
 					break;
 				default:
-					$instance[$widget_field['id']] = ( ! empty( $new_instance[$widget_field['id']] ) ) ? strip_tags( $new_instance[$widget_field['id']] ) : '';
+					$instance[$widget_field['id']] = ( ! empty( $new_instance[$widget_field['id']] ) ) ?  $new_instance[$widget_field['id']] : '';
 			}
 		}
 		return $instance;

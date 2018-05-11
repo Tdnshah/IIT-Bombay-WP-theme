@@ -21,11 +21,9 @@ Tags:  is licensed under the GPL.
     padding:0px;
 
 }
-
 .row{
-    margin: 0px;
+    margin:0;
 }
-
 #section-content{
     margin-top: 1rem;
 }
@@ -68,23 +66,12 @@ Tags:  is licensed under the GPL.
     
 }
 /****************************main navbar *******************************/
-.navbar-nav > li:hover > .dropdown-menu {
-    display: block;
-    top: 40px;
-    }
-.navbar-nav li > .dropdown-menu li:hover .dropdown-menu {
-    left: 190px;
-    top: 0;
-    width: 200px !important;
-    display: block;
-    }
 .navbar{
     padding:0px;
 }
 .nav-link{
     height: 100%;
 }
-
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
     color: white;
 }
@@ -197,6 +184,23 @@ li.active {
     padding: 0;
 }
 
+
+#fp-hero-section .row{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#fp-hero-section .row > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+#fp-hero-section .row > [class*='col-'] img {
+      align-self: center;
+    }  
 
 
 /* single content template in single.php file */
