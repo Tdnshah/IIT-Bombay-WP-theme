@@ -46,12 +46,19 @@
   <div class="container-fluid" id="logo-section">
     <div class="container">
       <div class="row logo">
-      <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_url( get_theme_mod( 'iitb_theme_institute_setting' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'iitb_theme_primary_logo' ) ); ?>' alt='<?php echo esc_url( get_theme_mod( 'iitb_theme_institute_setting' ) ); ?>' id="primary-logo" ></a>   
+        <div class="col-sm-3">
+          <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_url( get_theme_mod( 'iitb_theme_institute_setting' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'iitb_theme_primary_logo' ) ); ?>' alt='<?php echo esc_url( get_theme_mod( 'iitb_theme_institute_setting' ) ); ?>' id="primary-logo" ></a>
           <div class="logo-text" id="logo-text">
-          <?php echo get_theme_mod( 'iitb_theme_institute_setting' ); ?>
-          </div>  
-          <h3 style="padding-top:20px;padding-left:3rem;"> <strong><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><br><?php bloginfo( 'description' );?> </strong></h3>       
+            <?php echo get_theme_mod( 'iitb_theme_institute_setting' ); ?>
+          </div>
+        </div> 
+        <div class="col-sm-7 text-center">
+          <h3 style="padding-top:20px;"> <strong><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><br><?php bloginfo( 'description' );?> </strong></h3>
+        </div>          
+                 
+        <div class="col-sm-2">
           <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'iitb_theme_secondary_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' id="secondary-logo" ></a>
+        </div>
       </div>
     </div>
   </div>
@@ -63,16 +70,17 @@
 	  	<span class="navbar-toggler-icon"></span>
 	    </button>
 		  <?php
-        wp_nav_menu( array(
-          'theme_location'    => 'primary',
-          'depth'             => 5,
-          'container'         => 'div',
-          'container_class'   => 'collapse navbar-collapse',
-          'container_id'      => 'bs-example-navbar-collapse-1',
-          'menu_class'        => 'navbar-nav mr-auto',
-          'fallback_cb'     => 'bs4navwalker::fallback',
-          'walker'          => new bs4navwalker()
-        ) );
+      
+       wp_nav_menu( array(
+         'theme_location'    => 'primary',
+         'depth'             => 5,
+         'container'         => 'div',
+         'container_class'   => 'collapse navbar-collapse',
+         'container_id'      => 'bs-example-navbar-collapse-1',
+         'menu_class'        => 'navbar-nav mr-auto',
+         'fallback_cb'     => 'bs4navwalker::fallback',
+         'walker'          => new bs4navwalker()
+       ) ); 
 	  	?>
 	
     </nav>

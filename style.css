@@ -31,6 +31,12 @@ Tags:  is licensed under the GPL.
 #no-padding{
     padding-top: 5px;
 }
+
+/*** LOGO SECTION ***/
+.logo > [class*='col-'] {
+    padding:0px;
+}
+
 #logo-section{
     margin-top:0.5rem;
     margin-bottom:0.5rem;
@@ -44,11 +50,10 @@ Tags:  is licensed under the GPL.
     width:78px; 
 }
 .logo-text{
+    float: right;
     max-height: 80px;
     max-width: 150px;
-    padding-top:2.5%;
-    margin-left: 0.8rem;
-    position: relative;
+    padding-top:2rem;
 }
 .logo h3{
     color: #006699;
@@ -66,6 +71,8 @@ Tags:  is licensed under the GPL.
     
 }
 /****************************main navbar *******************************/
+
+
 .navbar{
     padding:0px;
 }
@@ -98,6 +105,10 @@ li.active {
 #slider-section{
     min-height: 300px;
     background:url(./assets/images/square_bg.png) repeat scroll 0 0 #f1f1f1;
+}
+
+.carousel-item img{
+    width: inherit;
 }
 /***********************************content**************************************/
 #news-section{
