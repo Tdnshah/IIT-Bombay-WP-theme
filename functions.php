@@ -149,10 +149,10 @@ register_sidebar(array(
 
 register_sidebar(array(
     'name' => 'Hero Section 1 ',
-    'id'            => 'herosection1 ',
+    'id'            => 'herosection1',
     'before_widget' => '<div class = "herosection1">',
     'after_widget' => '</div>',
-    'before_title' => '<div class="herosectionh1"><h3>',
+    'before_title' => '<div class="herosection1"><h3>',
     'after_title' => '</h3></div>',
   )
 );
