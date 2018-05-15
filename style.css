@@ -196,7 +196,7 @@ li.active {
 }
 
 
-#fp-hero-section .row{
+/* #fp-hero-section .row{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -211,7 +211,7 @@ li.active {
     }
 #fp-hero-section .row > [class*='col-'] img {
       align-self: center;
-    }  
+    }   */
 
 
 /* single content template in single.php file */
