@@ -73,34 +73,8 @@ Tags:  is licensed under the GPL.
 /****************************main navbar *******************************/
 
 
-.navbar{
-    padding:0px;
-}
-.nav-link{
-    height: 100%;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-    color: white;
-}
-   
 
-.nav-link:hover{
-    background: gray;
-}
 
-li.active {
-    background-color: #006699;
-}
-
-#top-navbar{    
-    background-color: #333; 
-
-      
-}
-#top-navbar .nav-link{
-    color: #999; 
-    padding: 0.219rem; ;
-}
 /***********************************slider**************************************/
 #slider-section{
     min-height: 300px;

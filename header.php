@@ -7,40 +7,13 @@
     <title><?php bloginfo('name');?></title>
     <?php wp_head();?>
     <script>
-   jQuery(function($) {
-    $('.navbar .dropdown').hover(function() {
-      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-
-    }, function() {
-      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
-
-    });
-
-    $('.navbar .dropdown > a').click(function() {
-      location.href = this.href;
-    });
-
-  
-});
-
     </script>
 </head>
 <body <?php body_class();?> >
     <header>
     <div class="container-fluid" id=top-navbar >
       <div class="container">
-        <nav class="navbar navbar-expand-sm" >
-            <ul class="nav mr-auto">
-                <li class="nav-item"><a href="" class="nav-link ">English</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Hindi</a></li>
-              </ul>  
-          <ul class="nav ml-auto">
-              <li class="nav-item"><a href="" class="nav-link ">Facebook</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Twitter</a></li>
-              <li class="nav-item"><a href="" class="nav-link">LinkedIN</a></li>
-              <li class="nav-item"><a href="" class="nav-link"></a></li>
-            </ul>
-          </nav>
+      <?php wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
         </div>
       </div>
   <div class="container-fluid" id="logo-section">
@@ -64,26 +37,7 @@
   </div>
   <div class="containner-fluid" id="mainmenu-section">
     <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
-  	  <!-- Brand and toggle get grouped for better mobile display -->
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-	  	<span class="navbar-toggler-icon"></span>
-	    </button>
-		  <?php
-      
-       wp_nav_menu( array(
-         'theme_location'    => 'primary',
-         'depth'             => 5,
-         'container'         => 'div',
-         'container_class'   => 'collapse navbar-collapse',
-         'container_id'      => 'bs-example-navbar-collapse-1',
-         'menu_class'        => 'navbar-nav mr-auto',
-         'fallback_cb'     => 'bs4navwalker::fallback',
-         'walker'          => new bs4navwalker()
-       ) ); 
-	  	?>
-	
-    </nav>
+    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </div>
   </div>    
 </header>
