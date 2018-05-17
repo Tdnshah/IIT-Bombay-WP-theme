@@ -1,6 +1,5 @@
 <?php
 // require_once( get_template_directory() . '/inc/customizer/customizer.php' );
-require_once(get_template_directory() . '/inc/wp-bootstrap-navwalker.php');
 require_once(get_template_directory() . '/inc/blogroll-widget.php');
 require_once(get_template_directory() . '/inc/Herosection_Widget.php');
 
