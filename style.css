@@ -32,6 +32,12 @@ Tags:  is licensed under the GPL.
     padding-top: 5px;
 }
 
+/*** Navigation ***/
+
+#top-navbar{
+    background:#999;
+}
+
 /*** LOGO SECTION ***/
 .logo > [class*='col-'] {
     padding:0px;
