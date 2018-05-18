@@ -13,7 +13,7 @@
     <header>
     <div class="container-fluid" id=top-navbar >
       <div class="container">
-      <?php wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
+      <?php wp_nav_menu( array( 'theme_location' => 'topnav' ) ); ?>
         </div>
       </div>
   <div class="container-fluid" id="logo-section">
