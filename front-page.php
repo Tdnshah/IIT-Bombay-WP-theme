@@ -18,8 +18,8 @@ get_template_part('slider');
 
     <div class="container" id="fp-hero-section">
         <div class="row">
-            <div class="col-sm-12"
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("herosection1") ) : ?>
+            <div class="col-sm-12">
+	    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("herosection1") ) : ?>
             <?php endif;?>
 	    </div>
         </div>
