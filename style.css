@@ -13,7 +13,7 @@ Tags:  is licensed under the GPL.
 
 /***************************global settings **************************/
 .container{
-    max-width: 70%;
+    /* max-width: 70%; */
     padding:0px;
 }
 
@@ -52,14 +52,16 @@ Tags:  is licensed under the GPL.
     position: relative;
     }
 .logo img{
+    float: left;
     height: 80px;
     width:78px; 
 }
 .logo-text{
-    float: right;
+    float: left;
     max-height: 80px;
-    max-width: 150px;
+    max-width: 175px;
     padding-top:2rem;
+    padding-left:0.5rem;
 }
 .logo h3{
     color: #006699;
