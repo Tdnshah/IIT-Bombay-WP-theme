@@ -10,14 +10,9 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/Image_27.jpg'?>" alt="Los Angeles">
+          <img src="http://10.102.1.215/ppcclt/wp-content/uploads/2018/05/image.png" alt="Los Angeles">
         </div>
-        <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/krasivyi_korabl_-1024x768.jpg'?>" alt="Chicago">
-        </div>
-        <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/ships__003121_.jpg'?>" alt="New York">
-        </div>
+        
       </div>
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">

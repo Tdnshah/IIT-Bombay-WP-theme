@@ -12,6 +12,13 @@ Tags:  is licensed under the GPL.
 */
 
 /***************************global settings **************************/
+body {
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: #000;
+}
 .container{
     /* max-width: 70%; */
     padding:0px;
@@ -113,16 +120,21 @@ Tags:  is licensed under the GPL.
 }
 /*********************** Widgets section **************************/
 .headingdeco{
-    background-color:#006699 ;
+    background-color:#eee;
     padding:5px;
-    text-align: center;
-    color: white;    
+    text-align: center;    
 }
-
+/* 
 .headingdeco a{
-    color: white;
-}
+    color:#000;
+} */
+#title{
+    border-left: 2px solid #000;
+    padding-left:1rem;
+    color:#000;
+    text-align:left;
 
+}
 /**************************footer section ***********************/
 
 #footer-section{
