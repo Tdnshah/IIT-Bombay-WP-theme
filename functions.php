@@ -35,6 +35,38 @@ function iitb_theme_institute_settings($wp_customize){
 };
 add_action( 'customize_register', 'iitb_theme_institute_settings' );
 
+/* Customiser Front Page Section functions */
+function iitb_theme_frontpage_settings($wp_customize){
+    $wp_customize->add_section( 'iitb_theme_frontpage_section' , array(
+        'title'       => __( 'Front Page Setting', 'iitb_theme' ),
+        'priority'    => 30,
+        'description' => 'Here You can enable or disable mulitiple feature of the home page like slider, home page title',
+    ) );
+    $wp_customize->add_setting( 'iitb_theme_frontpage_slider_activation_setting', array(
+        'capability' => 'edit_theme_options',
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+      ) );
+    $wp_customize->add_control('iitb_theme_frontpage_slider_activation_setting', array(
+        'label'   => 'Slider Enable',
+        'section' => 'iitb_theme_frontpage_section',
+        'type'    => 'checkbox',
+   ) ) ;
+
+   $wp_customize->add_setting( 'iitb_theme_frontpage_Title_setting', array(
+    'capability' => 'edit_theme_options',
+    'default' => '',
+    'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control('iitb_theme_frontpage_Title_setting', array(
+    'label'   => 'Title Enable',
+    'section' => 'iitb_theme_frontpage_section',
+    'type'    => 'checkbox',
+) ) ;
+};
+add_action( 'customize_register', 'iitb_theme_frontpage_settings' );
+
+
 /* Customiser Logo Uploader functions */
 function iitb_theme_primary_logo_uploader($wp_customize){
     $wp_customize->add_section( 'iitb_theme_logo_section' , array(
