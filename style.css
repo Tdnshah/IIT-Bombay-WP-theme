@@ -216,4 +216,25 @@ h3{
 #single-thumbnail{
     padding-top:2rem;
 }
+ 
+
+/** Interactive Images Styles **/
+
+#info-header{
+    padding:1rem;
+    background-color:#000;
+}
+#info-header p{
+    color:#fff;
+    font-size: 1.3rem;
+}
+
+.hidden{
+    display:none;
+}
+
+#info-panel{
+    padding:1rem;
+    background-color:#eee;
+}
 

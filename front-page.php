@@ -4,6 +4,75 @@ if (get_theme_mod('iitb_theme_frontpage_slider_activation_setting') === "1"){
 get_template_part('slider');
 }
 ?>
+
+<div class="container-fluid">
+
+     <div class="container">
+        <div class="row">
+            <div class="col-sm-3" id="info-header">
+                <p>
+                        Parimal and Pramod Chaudhari Centre for Learning and Teaching (PPCCLT) at IIT
+                        Bombay aims to offer services to foster innovative, collaborative and evidence-based
+                        effective teaching-learning practices for effective learning.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="http://10.102.1.215/ppcclt/wp-content/uploads/2018/05/Screenshot-from-2018-05-15-15-45-59-1.png" alt="" class="img-thumbnai" usemap="#ppcclt-goal" id="mapped-img">
+                <map name="ppcclt-goal" id="Map">
+                    <area alt="" title="" href="#area1" shape="poly" coords="146,7,203,7,232,56,204,105,146,105,118,56" data-maphilight='{"stroke":true,"fillColor":"cbf68c","fillOpacity":1}' />
+                    <area alt="" title="" href="#area2" shape="poly" coords="253,69,310,69,337,118,311,167,253,168,224,121" />
+                    <area alt="" title="" href="#area3" shape="poly" coords="253,191,311,193,337,241,310,289,253,290,226,241" />
+                    <area alt="" title="" href="#area4" shape="poly" coords="146,253,203,253,232,303,203,349,147,350,118,304" />
+                    <area alt="" title="" href="#area5" shape="poly" coords="39,190,95,192,122,240,95,289,38,288,11,241" />
+                    <area alt="" title="" href="#area6" shape="poly" coords="39,68,96,67,124,117,95,167,38,167,11,118" />
+                </map>
+            </div>
+            <div class="col-sm-5" id="info-panel">
+                <div class="text-left" id="area1">
+                    <h1>Involve Learners</h1>
+                    <p> 
+                    We advocate teaching-learning practices that gives learners ownership of their learning by involving them in the learning process   
+                    </p>
+                </div>
+                <div class="text-left hidden" id="area2">
+                    <h1>Stimulate Learning</h1>
+                    <p> 
+                    We focus of creating a student-centered learning environment that stimulates learning.   
+                    </p>
+                </div>
+                <div class="text-left hidden" id="area3">
+                <h1>Pedagogy Training</h1>
+                    <p> 
+                    We offer training for innovative, collaborative and evidence-based teaching-learning practices for effective learning.   
+                    </p>
+                </div>
+                <div class="text-left hidden" id="area4">
+                <h1>Inclusive Teaching</h1>
+                <p> 
+                We nurture a mindset that promotes respect and inclusion for a wide range of learners.   
+                </p>
+                </div>
+                <div class="text-left hidden" id="area5">
+                <h1>Research based educational practices</h1>
+                <p> 
+                We disseminate evidence-based teaching-learning practices and offer support to faculty for conducting education research. 
+                </p>
+                </div>
+                <div class="text-left hidden" id="area6">
+                <h1>Empathize With Learners</h1>
+                <p> 
+                ‘Innovation starts with empathy!’  We believe in empathizing with learners to foster innovations in teaching and learning.  
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
 <div class="container-fluid" id="fp-content-section">
     <div class="container">
         <div class="row">

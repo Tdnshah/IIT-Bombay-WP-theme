@@ -8,6 +8,7 @@ function iitb_theme_resource_loading(){
     wp_enqueue_script('jquery331',get_template_directory_uri() .'/assets/jquery/jquery-3.3.1.min.js');
     wp_enqueue_style('bootstrapcss',get_template_directory_uri() .'/assets/bootstrap/css/bootstrap.min.css');
     wp_enqueue_script('bootstrapjs',get_template_directory_uri() .'/assets/bootstrap/js/bootstrap.min.js');
+    wp_enqueue_script('scriptjs',get_template_directory_uri() .'/script.js');
     wp_enqueue_style('style',get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'iitb_theme_resource_loading');
