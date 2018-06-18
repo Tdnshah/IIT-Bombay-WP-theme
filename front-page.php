@@ -8,16 +8,14 @@ get_template_part('slider');
 <div class="container-fluid">
 
      <div class="container">
-        <div class="row">
-            <div class="col-sm-3" id="info-header">
-                <p>
-                        Parimal and Pramod Chaudhari Centre for Learning and Teaching (PPCCLT) at IIT
-                        Bombay aims to offer services to foster innovative, collaborative and evidence-based
-                        effective teaching-learning practices for effective learning.
+        <div class="row" id="header-panel">
+            <div class="col-sm-4" id="info-header">
+                <p style="font-size:1rem;">
+                Welcome! The Parimal and Pramod Chaudhary Centre for Learning and Teaching  (PPCCLT) collaborates with faculty, students and education experts across Institute to foster excellence and innovation in teaching and learning. We offer faculty development programs, series of pedagogy seminars, hands-on workshops, professional development sessions for faculty and students to change their teaching- learning experience.
                 </p>
             </div>
             <div class="col-sm-4">
-                <img src="http://10.102.1.215/ppcclt/wp-content/uploads/2018/05/Screenshot-from-2018-05-15-15-45-59-1.png" alt="" class="img-thumbnai" usemap="#ppcclt-goal" id="mapped-img">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/ppcclt-interactive.png" alt="" class="img-fluid" usemap="#ppcclt-goal" id="mapped-img">
                 <map name="ppcclt-goal" id="Map">
                     <area alt="" title="" href="#area1" shape="poly" coords="146,7,203,7,232,56,204,105,146,105,118,56" data-maphilight='{"stroke":true,"fillColor":"cbf68c","fillOpacity":1}' />
                     <area alt="" title="" href="#area2" shape="poly" coords="253,69,310,69,337,118,311,167,253,168,224,121" />
@@ -27,7 +25,7 @@ get_template_part('slider');
                     <area alt="" title="" href="#area6" shape="poly" coords="39,68,96,67,124,117,95,167,38,167,11,118" />
                 </map>
             </div>
-            <div class="col-sm-5" id="info-panel">
+            <div class="col-sm-4" id="info-panel">
                 <div class="text-left" id="area1">
                     <h1>Involve Learners</h1>
                     <p> 
