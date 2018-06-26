@@ -11,7 +11,7 @@ get_template_part('slider');
         <div class="row" id="header-panel">
             <div class="col-sm-4" id="info-header">
                 <p style="font-size:1rem;">
-                Welcome! The Parimal and Pramod Chaudhary Centre for Learning and Teaching  (PPCCLT) collaborates with faculty, students and education experts across Institute to foster excellence and innovation in teaching and learning. We offer faculty development programs, series of pedagogy seminars, hands-on workshops, professional development sessions for faculty and students to change their teaching- learning experience.
+                Welcome! The Parimal and Pramod Chaudhari Centre for Learning and Teaching  (PPCCLT) collaborates with faculty, students and education experts across Institute to foster excellence and innovation in teaching and learning. 
                 </p>
             </div>
             <div class="col-sm-4">
@@ -26,6 +26,11 @@ get_template_part('slider');
                 </map>
             </div>
             <div class="col-sm-4" id="info-panel">
+             <div class="text-left" id="default">
+                    <p> 
+                    We offer faculty development programs, series of pedagogy seminars, hands-on workshops, professional development sessions for faculty and students to change their teaching- learning experience.  
+                    </p>
+                </div>
                 <div class="text-left" id="area1">
                     <h1>Involve Learners</h1>
                     <p> 
