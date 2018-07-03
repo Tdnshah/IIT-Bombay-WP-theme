@@ -1,0 +1,20 @@
+.profiles{
+    margin:1rem;
+}
+.profile{
+    margin:1rem;
+    padding:0;
+}
+.profile-header{
+    height: 80px;
+    width:80px;
+    margin:auto;
+    text-align: center
+}
+.profile-content{
+    text-align:center;
+    padding:1rem 0;
+}
+.profile-footer{
+    padding-bottom:1rem;
+}

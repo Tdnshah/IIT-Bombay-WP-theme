@@ -1,4 +1,5 @@
 <?php
+require_once(get_template_directory().'/our-team-cpt/team-profile.php' );
 // require_once( get_template_directory() . '/inc/customizer/customizer.php' );
 require_once(get_template_directory() . '/inc/blogroll-widget.php');
 require_once(get_template_directory() . '/inc/Herosection_Widget.php');
@@ -10,6 +11,7 @@ function iitb_theme_resource_loading(){
     wp_enqueue_script('bootstrapjs',get_template_directory_uri() .'/assets/bootstrap/js/bootstrap.min.js');
     wp_enqueue_script('scriptjs',get_template_directory_uri() .'/script.js');
     wp_enqueue_style('style',get_stylesheet_uri() );
+    wp_enqueue_style( 'team-template', get_template_directory_uri()  . '/our-team-cpt/team.css' );
 }
 add_action( 'wp_enqueue_scripts', 'iitb_theme_resource_loading');
 /************ adding featured image support *******/
@@ -199,7 +201,10 @@ register_sidebar(array(
   )
 );
 
-
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
 
 ?>
 

@@ -1,5 +1,5 @@
-Theme Name: IIT Bombay Theme    
 /*
+Theme Name: IIT Bombay Theme    
 Theme URI: iitb.ac.in
 Author: Tejas Shah
 Author URI: 
@@ -14,7 +14,7 @@ Tags:  is licensed under the GPL.
 /***************************global settings **************************/
 body {
     color:#000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 h3{
     color: #000;
