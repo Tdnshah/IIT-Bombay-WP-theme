@@ -50,7 +50,7 @@ if ( $team_posts ):
 	
 		<div class="profile-footer">
             <a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"><i class="dashicons dashicons-admin-links"></i></a>
-            <a href="http://<?php echo get_field('team_website'); ?>" target='_blank'><i class="dashicons dashicons-admin-site"></i></a>
+            <a href="<?php echo get_field('team_website'); ?>" target='_blank'><i class="dashicons dashicons-admin-site"></i></a>
         </div>
         </div>
 	</article>
