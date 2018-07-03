@@ -34,22 +34,21 @@ if ( $team_posts ):
 		$thumb_src = $src[0];
 	}
 	?>
-	<article class="col-sm-2 profile">
+	<article class="col-sm-1 profile">
     <div class="text-center">
 		<div class="profile-header">
 			<?php if ( $thumb_src ): ?>
 			<img src="<?php echo $thumb_src; ?>" alt="<?php the_title(); ?>, <?php the_field('team_position'); ?>" class="img-fluid rounded-circle" >
 			<?php endif; ?>
 		</div>
-		
 		<div class="profile-content">
-			<h5><?php the_title(); ?></h5>
+			<h6><?php the_title(); ?></h6>
 			<?php the_field('team_position'); ?>
 			<?php the_content(); ?>
 		</div>
 	
 		<div class="profile-footer">
-            <a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"><i class="dashicons dashicons-admin-links"></i></a>
+            <!-- <a href="mailto:<?php echo antispambot( get_field('team_email') ); ?>"><i class="dashicons dashicons-admin-links"></i></a> -->
             <a href="<?php echo get_field('team_website'); ?>" target='_blank'><i class="dashicons dashicons-admin-site"></i></a>
         </div>
         </div>

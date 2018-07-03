@@ -2,12 +2,12 @@
     margin:1rem;
 }
 .profile{
-    margin:1rem;
     padding:0;
 }
 .profile-header{
-    height: 80px;
-    width:80px;
+    height: 50px;
+    width:50px;
+    padding-bottom:1rem;
     margin:auto;
     text-align: center
 }
