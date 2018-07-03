@@ -34,7 +34,7 @@ if ( $team_posts ):
 		$thumb_src = $src[0];
 	}
 	?>
-	<article class="col-sm-1 profile">
+	<article class="col-sm-2 profile">
     <div class="text-center">
 		<div class="profile-header">
 			<?php if ( $thumb_src ): ?>
