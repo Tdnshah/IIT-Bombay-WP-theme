@@ -83,7 +83,7 @@ class TeamProfiles
 			'name' => _x("Team", "post type general name"),
 			'singular_name' => _x("Team", "post type singular name"),
 			'menu_name' => 'Team Profiles',
-			'add_new' => _x("Add New", "team item"),
+			'add_new' => _x("Add Profile", "team item"),
 			'add_new_item' => __("Add New Profile"),
 			'edit_item' => __("Edit Profile"),
 			'new_item' => __("New Profile"),
